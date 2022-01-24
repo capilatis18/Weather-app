@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background-color: #F0A300;
+}
+#nav input{
+    border-radius: 5px;
+    padding: 10px;
+}
+#nav button{
+    margin-left: 5px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 3px;
+}
+#background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #003AA3;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    height: 40vh;
+    width: 30vw;
+    background-color: #F0A300;
+    row-gap: 10px;
+}
+.main #textos{
+    display: grid;
+    align-items: space-between;
+    height: 20vh;
+ /*   grid-template-areas: 'temp temp'
+                         'min max'
+                         'sen sen'
+                         'presion presion'
+                         'humedad humedad';*/
+    text-align: center;
+}
+#textos #min, #max, #sensacion, #presion, #humedad{
+    
+    font-size: 13px;
+}
+#textos #secondaryData{
+    align-self: flex-end;
+}
